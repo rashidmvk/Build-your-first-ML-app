@@ -11,7 +11,7 @@ import sklearn # import scikit learn
 
 from sklearn import tree #import tree
 
-features = [[140, 1], [130, 2], [120, 1], [170, 2],  [130, 2], [130, 1], [160, 2], ]
+features = [[140, 0], [130, 1], [120, 0], [170, 1],  [130, 1], [130, 0], [160, 1], ]
 
 labels = [["apple"], ["orange"], ["apple"], ["orange"], ["orange"], ["apple"], ["orange"], ]
 
@@ -19,4 +19,4 @@ clf = tree.DecisionTreeClassifier()
 
 clf = clf.fit(features,labels)
 
-print(clf.predict([[130,2]]))
+print(clf.predict([[130,0]]))
